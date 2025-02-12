@@ -1,0 +1,1 @@
+echo "Run fake installer for VENDOR:${VENDOR} on VERSION:${VERSION} with INSTALL_METHOD:${INSTALL_METHOD}"

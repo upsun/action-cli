@@ -1,0 +1,33 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  cli_provider:
+    description: 'CLI provider'
+    required: false
+    default: 'upsun'
+  cli_version:
+    description: 'CLI version'
+    required: false
+    default: ''
+  cli_token:
+    description: 'CLI Token'
+    required: false
+    default: ''
+  project_id:
+    description: 'Project ID'
+    required: false
+    default: ''
+  environment_name:
+    description: 'Environment Name (get current branch by default)'
+    required: false
+    default: ''
+  command:
+    description: 'Action to execute'
+    default: ''
+outputs:
+  result: # id of output
+    description: 'To test'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+  post: 'dist/index.js'
