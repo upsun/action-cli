@@ -17,21 +17,17 @@ describe('InstallerCmd', () => {
   it('downloadInstaller', async () => {
     await installer.downloadInstaller();
 
-    // Vérifications
     expect(fs.existsSync('installer.sh')).toBe(true)
   });
 
   it('runInstaller', async () => {
     await installer.runInstaller();
-
-    // Vérifications
     expect(fs.existsSync('installer.sh')).toBe(true)
   });
 
   it('install', async () => {
     await installer.do();
 
-    // Vérifications
     expect(fs.existsSync('installer.sh')).toBe(true)
   });
 });
