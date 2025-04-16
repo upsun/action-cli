@@ -1,5 +1,5 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Upsun CLI action'
+description: 'Installs the Upsun/Platform.sh CLI allowing your workflow to interact with an upsun/platform.sh project.'
 inputs:
   cli_provider:
     description: 'CLI provider'
